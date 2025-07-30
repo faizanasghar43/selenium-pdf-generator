@@ -27,8 +27,9 @@ This package lets you render full-page PDFs using Chrome’s DevTools Protocol v
 ```bash
 pip install selenium-pdf-generator
 
-## 🧪 Usage
 ```
+## 🧪 Usage
+```bash
 from selenium_pdf_generator import PdfGenerator
 
 generator = PdfGenerator(

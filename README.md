@@ -11,6 +11,7 @@ So I tried using **Selenium + headless Chrome**, and it just worked.
 This package wraps that working solution into something reusable and configurable for everyone.
 
 
+---
 
 ## 🚀 Overview
 
@@ -28,12 +29,6 @@ This package lets you render full-page PDFs using Chrome’s DevTools Protocol v
 
 ---
 
-## 📦 Installation
-
-```bash
-pip install selenium-pdf-generator
-
-```
 ## 🧪 Usage
 ```bash
 from selenium_pdf_generator import PdfGenerator
@@ -49,6 +44,9 @@ pdf_io = generator.generate_pdf_from_url("https://yourdomain.com/protected-page"
 with open("report.pdf", "wb") as f:
     f.write(pdf_io.read())
 ```
+---
+---
+
 ## 🔐 Authenticated Page Support
 If the webpage uses JWT stored in access_token, the generator will automatically:
 
@@ -57,6 +55,11 @@ If the webpage uses JWT stored in access_token, the generator will automatically
 - Set a cookie access_token=...
 
 - Load the target URL with auth
+
+---
+
+---
+
 ```bash
 
 PdfGenerator(is_authenticated=True, access_token="...")
@@ -69,6 +72,8 @@ PdfGenerator(is_authenticated=True, access_token="...")
 | `Letter` | 8.5 × 11            |
 | `Legal`  | 8.5 × 14            |
 | `A3`     | 11.69 × 16.54       |
+
+---
 
 ---
 

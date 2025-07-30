@@ -25,7 +25,6 @@ This package lets you render full-page PDFs using Chrome’s DevTools Protocol v
 - 🧾 Headless Chrome print-to-PDF rendering
 - 🖨️ Support for multiple page sizes: `A4`, `Letter`, `Legal`, `A3`
 - ⚙️ Fully configurable and reusable in Django, FastAPI, Flask
-- 🚀 Supports secure PyPI publishing using GitHub Trusted Publisher
 
 ---
 
